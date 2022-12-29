@@ -1,0 +1,55 @@
+.banner_section {
+    background-color: #A1E2EB;
+}
+
+.banner_sub_section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.first_title {
+    font-weight: 700;
+    font-size: 80px;
+    color: #FFFF;
+    padding-top: 130px;
+}
+
+.second_title {
+    font-weight: 700;
+    font-size: 63px;
+    color: #FFFF;
+}
+
+.banner_buttons {
+    display: flex;
+    gap: 80px;
+    padding: 60px 0;
+}
+
+.banner_buttons div:nth-of-type(1) {
+    border: 2px solid #FFFF;
+    background-color: #FFFF;
+    text-align: center;
+    width: 241px;
+    height: 82px;
+    padding: 25px 50px;
+    border-radius: 13px;
+    font-size: 25px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+.banner_buttons div:nth-of-type(2) {
+    border: 2px solid #FFFF;
+    color: #FFFF;
+    text-align: center;
+    width: 241px;
+    height: 82px;
+    padding: 25px 50px;
+    border-radius: 13px;
+    font-size: 25px;
+    font-weight: 700px;
+    cursor: pointer;
+}

@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    max-width: 1116px;
-    margin: 0 auto;
+body {
+    font-family: 'Montserrat', sans-serif;
 }

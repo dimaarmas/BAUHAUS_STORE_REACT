@@ -4,19 +4,27 @@ import s from './index.module.css'
 import { ShoppingCartOutlined } from '@ant-design/icons'
 
 export default function Nav() {
+
+    const categoryTextColor = {
+        color: '#339933'
+    }
+
     return (
-        <nav className={['wrapper', s.nav_block].join(' ')}>
-            <a href='#'>
+        <header className={s.header}>
+            <div className={s.logo_block}>
                 <img src={logo} alt="company_logo" />
-            </a>
-            <button className={s.catalog_btn}>Каталог</button>
-            <ul className={s.nav_menu}>
-                <li>Категории</li>
-                <li>Купон</li>
-                <li>Акции</li>
-                <li>Контакты</li>
-                <ShoppingCartOutlined className={s.shopping_cart} />
-            </ul>
-        </nav>
+                <div>Каталог</div>
+            </div>
+            <nav>
+                <ul className={s.nav_block}>
+                    <li style={categoryTextColor}>Категории</li>
+                    <li>Купон</li>
+                    <li>Акции</li>
+                    <li>Контакты</li>
+                    <ShoppingCartOutlined className={s.shopping_cart} />
+                </ul>
+            </nav >
+        </header>
+
     )
 }
