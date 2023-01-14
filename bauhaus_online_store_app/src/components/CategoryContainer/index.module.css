@@ -1,0 +1,12 @@
+.categories_section {
+    margin: 40px 32px 155px 32px;
+}
+
+.categories_title {
+    display: flex;
+}
+
+.categories_item {
+    display: flex;
+    justify-content: space-evenly;
+}
