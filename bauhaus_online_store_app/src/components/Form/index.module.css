@@ -1,0 +1,43 @@
+.form_section {
+    display: flex;
+    background-color: #339933;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.discount_text {
+    font-size: 90px;
+    font-weight: 700;
+    color: #FFFF;
+}
+
+.under_text {
+    font-size: 50px;
+    font-weight: 700px;
+    color: #FFFF;
+}
+
+.form_item input {
+    width: 473px;
+    height: 75px;
+    background: #FFFF;
+    border: 1px solid transparent;
+    border-radius: 25.15px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 27px 0 26px 50px;
+}
+
+.form_item button {
+    width: 473px;
+    height: 75px;
+    background: transparent;
+    color: #FFFF;
+    border: 1px solid #FFFF;
+    border-radius: 25.15px;
+    font-size: 28.74px;
+    font-weight: 700;
+}

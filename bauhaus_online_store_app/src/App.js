@@ -5,6 +5,7 @@ import { Context } from './context'
 import { categoryCards } from "./data/categoryCards";
 import './App.css'
 import CategoryContainer from "./components/CategoryContainer";
+import Form from "./components/Form";
 
 function App() {
 
@@ -16,8 +17,8 @@ function App() {
         <Nav />
         <Header />
         <CategoryContainer />
+        <Form />
       </Context.Provider>
-
     </div>
   );
 }

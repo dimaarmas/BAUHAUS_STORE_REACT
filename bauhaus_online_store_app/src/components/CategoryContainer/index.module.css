@@ -4,6 +4,8 @@
 
 .categories_title {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .categories_item {
