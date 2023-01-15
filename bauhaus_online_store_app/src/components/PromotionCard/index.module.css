@@ -1,0 +1,26 @@
+.promotion_picture img {
+    border-radius: 15px;
+}
+
+.price_text {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.reduced_price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.actual_price {
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.discount_price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF32A1;
+}

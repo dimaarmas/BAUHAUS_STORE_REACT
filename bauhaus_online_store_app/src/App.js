@@ -1,23 +1,36 @@
-import Header from "./components/Header";
-import Nav from "./components/Nav";
+
+import Layout from './components/Layout';
+import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import { Context } from './context'
 import { categoryCards } from "./data/categoryCards";
+import { promotion } from "./data/promotion";
 import './App.css'
-import CategoryContainer from "./components/CategoryContainer";
-import Form from "./components/Form";
+
+
+
+import CategoriesPage from './pages/CategoriesPage'
+import ProductPage from './pages/ProductPage'
+import CartPage from './pages/CartPage'
+import DescriptionPage from './pages/DescriptionPage'
 
 function App() {
 
   const [categoryCard, setCategoryCard] = useState(categoryCards);
+  const [promCard, setPromCard] = useState(promotion);
 
   return (
     <div>
-      <Context.Provider value={{ categoryCard }}>
-        <Nav />
-        <Header />
-        <CategoryContainer />
-        <Form />
+      <Context.Provider value={{ categoryCard, promCard }}>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route path=":category" element={<CategoriesPage />} />
+            <Route path='products' element={<ProductPage />} />
+            <Route path='product/:id' element={<DescriptionPage />} />
+            <Route path='cart' element={<CartPage />} />
+          </Route>
+
+        </Routes>
       </Context.Provider>
     </div>
   );
