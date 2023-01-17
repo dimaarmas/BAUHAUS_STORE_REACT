@@ -5,7 +5,21 @@
 .categories_title {
     display: flex;
     justify-content: space-between;
+    width: 20%;
+}
 
+.categories_title h1 {
+    padding: 40px 32px 20px 30px;
+}
+
+.categories_title p {
+    border: 2px solid #8B8B8B;
+    width: 120px;
+    height: 30.97px;
+    font-size: 12px;
+    text-align: center;
+    padding: 7.48px 6px;
+    margin-top: 44px;
 }
 
 .categories_item {
