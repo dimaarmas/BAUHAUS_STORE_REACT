@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CategoryCard({ id, title, image }) {
+export default function CategoryCard({ title, image }) {
     return (
         <div>
             <img src={image} alt={title} />

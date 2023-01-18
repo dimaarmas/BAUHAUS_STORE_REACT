@@ -9,11 +9,12 @@ export default function CategoryContainer() {
 
     const { categoryCard } = useContext(Context);
 
+
     return (
         <div className={s.categories_section}>
             <div className={s.categories_title}>
                 <h1>Categories</h1>
-                <Link to=':category'>
+                <Link to='/category'>
                     <p>All Categogries</p>
                 </Link>
 

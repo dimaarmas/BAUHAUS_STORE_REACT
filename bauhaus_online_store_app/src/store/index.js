@@ -5,7 +5,7 @@ import { categoriesReducer } from './reducers/categories';
 
 
 const rootReducer = combineReducers({
-    category: categoriesReducer,
+    category: categoriesReducer
 });
 
 

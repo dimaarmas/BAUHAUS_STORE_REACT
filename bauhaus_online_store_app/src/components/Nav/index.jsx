@@ -21,7 +21,7 @@ export default function Nav() {
             </div>
             <nav>
                 <ul className={s.nav_block}>
-                    <Link to=':category'>
+                    <Link to='/category'>
                         <li style={categoryTextColor}>Categories</li>
                     </Link>
 
