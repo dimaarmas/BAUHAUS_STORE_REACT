@@ -13,18 +13,21 @@ export default function Nav() {
     return (
         <header className={s.header}>
             <div className={s.logo_block}>
-                <img src={logo} alt="company_logo" />
+                <Link to='/'>
+                    <img src={logo} alt="company_logo" />
+                </Link>
+
                 <div>Каталог</div>
             </div>
             <nav>
                 <ul className={s.nav_block}>
-                    <Link>
-                        <li style={categoryTextColor}>Категории</li>
+                    <Link to=':category'>
+                        <li style={categoryTextColor}>Categories</li>
                     </Link>
 
-                    <li>Купон</li>
-                    <li>Акции</li>
-                    <li>Контакты</li>
+                    <li>Coupon</li>
+                    <li>Promotions</li>
+                    <li>Contacts</li>
                     <Link to='/cart'>
                         <ShoppingCartOutlined className={s.shopping_cart} />
                     </Link>

@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
-import { getProducts } from '../../store/reducers/categories'
+import React from 'react'
+
 
 export default function CartPage() {
-    useEffect(() => {
-        getProducts()
-    }, [])
+
 
     return (
         <div>CartPage</div>
     )
 }
+
+// categories.map((el, index) => index >= 0 && index <= 1 ? <CategoryCard key={el} category={el} /> : '')
