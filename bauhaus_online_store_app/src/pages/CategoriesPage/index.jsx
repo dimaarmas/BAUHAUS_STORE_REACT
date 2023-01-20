@@ -5,6 +5,8 @@ import { load_all_categories } from '../../request/category_req'
 import s from './index.module.css'
 
 
+
+
 export default function CategoriesPage() {
 
     const dispatch = useDispatch();
@@ -23,7 +25,6 @@ export default function CategoriesPage() {
                     categories.map(el => <CategoriesCard key={el.id} {...el} />)
                 }
             </div>
-
         </div>
     )
 }

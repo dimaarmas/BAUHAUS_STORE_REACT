@@ -1,0 +1,9 @@
+.categories_item img {
+    width: 318px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.categories_item a {
+    text-decoration: none;
+}

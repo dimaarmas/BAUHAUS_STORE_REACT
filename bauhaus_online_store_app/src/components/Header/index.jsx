@@ -10,8 +10,8 @@ export default function Header() {
                     <p className={s.first_title}>Распродажа</p>
                     <p className={s.second_title}>в честь нового сезона</p>
                     <div className={s.banner_buttons}>
-                        <div>Все акции</div>
-                        <div>Подробнее</div>
+                        <div>Promotions</div>
+                        <div>More</div>
                     </div>
                 </div>
                 <img src={img} alt="banner_img" />

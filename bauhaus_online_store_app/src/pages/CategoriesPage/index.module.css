@@ -1,0 +1,5 @@
+.categories_block {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}

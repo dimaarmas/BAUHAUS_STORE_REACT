@@ -7,7 +7,7 @@ import { categoryCards } from "./data/categoryCards";
 import { promotion } from "./data/promotion";
 import './App.css'
 import CategoriesPage from './pages/CategoriesPage'
-import ProductPage from './pages/ProductPage'
+import ProductsPage from './pages/ProductsPage'
 import CartPage from './pages/CartPage'
 import DescriptionPage from './pages/DescriptionPage'
 import MainPage from './pages/MainPage';
@@ -23,8 +23,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<MainPage />} />
-            <Route path='category' element={<CategoriesPage />} />
-            <Route path='products' element={<ProductPage />} />
+            <Route path='category/:categories' element={<CategoriesPage />} />
+            <Route path='/:id' element={<ProductsPage />} />
             <Route path='product/:id' element={<DescriptionPage />} />
             <Route path='cart' element={<CartPage />} />
           </Route>

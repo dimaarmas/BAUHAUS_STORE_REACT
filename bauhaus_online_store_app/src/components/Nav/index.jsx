@@ -17,11 +17,11 @@ export default function Nav() {
                     <img src={logo} alt="company_logo" />
                 </Link>
 
-                <div>Каталог</div>
+                <div>Catalog</div>
             </div>
             <nav>
                 <ul className={s.nav_block}>
-                    <Link to='/category'>
+                    <Link to='/category/:categories'>
                         <li style={categoryTextColor}>Categories</li>
                     </Link>
 
