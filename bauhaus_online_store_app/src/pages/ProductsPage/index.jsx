@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { load_products } from '../../request/products_req'
 import ProductsCard from '../../components/ProductsCard';
+import s from './index.module.css'
 
 export default function ProductsPage() {
 
@@ -15,8 +16,8 @@ export default function ProductsPage() {
     })
 
     return (
-        <div>
-            <div>
+        <div className={s.products_page}>
+            <div className={s.products_container}>
                 {
                     products.map(el => <ProductsCard key={el.id} {...el} />)
                 }

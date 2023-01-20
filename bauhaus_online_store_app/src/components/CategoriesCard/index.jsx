@@ -8,11 +8,12 @@ export default function CategoriesCard({ id, title, image }) {
 
     const link = `/${id}`
     return (
-        <Link to={link}>
-            <div className={s.categories_item}>
+
+        <div className={s.categories_item}>
+            <Link to={link}>
                 <img src={src_img} alt={title} />
-                <p>{title}</p>
-            </div>
-        </Link>
+            </Link>
+            <p>{title}</p>
+        </div>
     )
 }
