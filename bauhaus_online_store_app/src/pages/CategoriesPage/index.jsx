@@ -8,17 +8,17 @@ import s from './index.module.css'
 export default function CategoriesPage() {
 
     const dispatch = useDispatch();
-    const categories = useSelector(state => state.categories)
+    const categories = useSelector(state => state.category)
 
     useEffect(() => {
         dispatch(load_all_categories)
-    })
+    }, [])
 
 
     return (
-        <div>
-            <h1>Category</h1>
-            <div>
+        <div className={s.all_categories_section}>
+            <h1>Categories</h1>
+            <div className={s.categories_block}>
                 {
                     categories.map(el => <CategoriesCard key={el.id} {...el} />)
                 }

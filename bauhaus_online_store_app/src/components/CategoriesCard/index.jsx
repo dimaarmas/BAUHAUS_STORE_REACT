@@ -1,11 +1,11 @@
 import React from 'react'
-import { loadAllCategories } from '../../store/reducers/categories'
-import { useDispatch } from 'react-redux'
+
 
 export default function CategoriesCard({ id, title, image }) {
+    const src_img = `http://localhost:3333${image}`
     return (
         <div>
-            <img src={image} alt={title} />
+            <img src={src_img} alt={title} />
             <p>{title}</p>
         </div>
     )
