@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function CategoriesCard({ id, title, image }) {
     const src_img = `http://localhost:3333${image}`
 
-    const link = `/${id}`
+    const link = `/categories/${id}`
     return (
 
         <div className={s.categories_item}>
