@@ -7,7 +7,7 @@ import s from './index.module.css'
 
 export default function DescriptionPage() {
 
-    const src_img = `http://localhost:3333${image}`
+
 
     const dispatch = useDispatch();
     const product = useSelector(state => state.product);
@@ -18,7 +18,10 @@ export default function DescriptionPage() {
         dispatch(load_product(id))
     }, []);
 
+    console.log(product);
+
     const { title, description, price, image, discont_price } = product;
+    const src_img = `http://localhost:3333${image}`
 
     return (
         <div>
@@ -31,6 +34,7 @@ export default function DescriptionPage() {
                     <p>{discont_price}</p>
                     <p>-7%</p>
                 </div>
+                <button>Add to Cart</button>
             </div>
         </div>
     )

@@ -7,8 +7,8 @@ export default function Header() {
         <div className={s.banner_section}>
             <div className={s.banner_sub_section}>
                 <div>
-                    <p className={s.first_title}>Распродажа</p>
-                    <p className={s.second_title}>в честь нового сезона</p>
+                    <p className={s.first_title}>Sale</p>
+                    <p className={s.second_title}>in honor of the new season</p>
                     <div className={s.banner_buttons}>
                         <div>Promotions</div>
                         <div>More</div>
