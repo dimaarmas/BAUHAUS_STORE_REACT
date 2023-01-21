@@ -28,8 +28,6 @@ function App() {
             <Route path='product/:id' element={<DescriptionPage />} />
             <Route path='cart' element={<CartPage />} />
           </Route>
-
-
         </Routes>
       </Context.Provider>
     </div>

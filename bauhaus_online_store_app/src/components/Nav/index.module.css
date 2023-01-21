@@ -27,6 +27,11 @@
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .logo_block div {
     background-color: #339933;
     border-radius: 5px;

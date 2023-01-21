@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { load_product } from '../../request/product_req'
 import { useDispatch, useSelector } from 'react-redux'
+import { addToCart } from '../../store/reducers/cart'
 import s from './index.module.css'
 
 
@@ -13,6 +14,10 @@ export default function DescriptionPage() {
     const product = useSelector(state => state.product);
 
     const { id } = useParams();
+
+    const product_id = product.id;
+
+    const add_to_cart = () => dispatch(addToCart({ id: product_id, title, image, price }))
 
     useEffect(() => {
         dispatch(load_product(id))
@@ -34,7 +39,7 @@ export default function DescriptionPage() {
                     <p>{discont_price}</p>
                     <p>-7%</p>
                 </div>
-                <button>Add to Cart</button>
+                <button onClick={add_to_cart}>Add to Cart</button>
             </div>
         </div>
     )
