@@ -27,19 +27,29 @@ export default function DescriptionPage() {
 
     const { title, description, price, image, discont_price } = product;
     const src_img = `http://localhost:3333${image}`
+    const discount = Math.round(100 - discont_price * 100 / price)
 
     return (
-        <div>
-            <img src={src_img} alt={title} />
-            <div>
-                <p>{title}</p>
-                <p>{description}</p>
-                <div>
-                    <p>{price}</p>
-                    <p>{discont_price}</p>
-                    <p>-7%</p>
+        <div className={s.product_block}>
+
+            <p className={s.title}>{title}</p>
+
+            <div className={s.product_item}>
+
+                <img src={src_img} alt={title} />
+
+                <div className={s.product_description}>
+
+                    <div className={s.price_block}>
+                        <p className={s.new_price}> {discont_price} €</p>
+                        <p className={s.price}> {price} €</p>
+                        <p className={s.discount}> -{discount}%</p>
+                    </div>
+
+                    <button onClick={add_to_cart}>Add to cart</button>
+                    <p className={s.description}>{description}</p>
+
                 </div>
-                <button onClick={add_to_cart}>Add to Cart</button>
             </div>
         </div>
     )

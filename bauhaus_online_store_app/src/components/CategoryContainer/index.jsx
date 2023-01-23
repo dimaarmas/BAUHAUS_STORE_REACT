@@ -14,7 +14,7 @@ export default function CategoryContainer() {
         <div className={s.categories_section}>
             <div className={s.categories_title}>
                 <h1>Categories</h1>
-                <Link to='/category'>
+                <Link to='/categories'>
                     <p>All Categogries</p>
                 </Link>
 
