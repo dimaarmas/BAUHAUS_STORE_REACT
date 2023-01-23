@@ -1,5 +1,10 @@
+.all_categories_section {
+    padding: 81px 0 101px 33px;
+}
+
 .categories_block {
     display: flex;
     justify-content: space-between;
     gap: 35px;
+    padding: 81px 0;
 }

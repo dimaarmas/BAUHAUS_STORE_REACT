@@ -1,0 +1,27 @@
+.footer_section {
+    height: 100%;
+    width: 100%;
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+    gap: 221px;
+}
+
+.contact_block h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contact_block p {
+    font-size: 70px;
+    font-weight: 600px;
+    padding: 25px 0 32px 31px;
+}
+
+.social_media .icons {
+    display: flex;
+    gap: 68px;
+    font-size: 44px;
+}

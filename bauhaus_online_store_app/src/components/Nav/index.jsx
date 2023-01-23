@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './media/bauhaus_logo.png'
+import cart_icon from './media/basketCart-icon.svg'
 import s from './index.module.css'
-import { ShoppingCartOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 
 export default function Nav() {
@@ -29,9 +29,8 @@ export default function Nav() {
                     <li>Promotions</li>
                     <li>Contacts</li>
                     <Link to='/cart'>
-                        <ShoppingCartOutlined className={s.shopping_cart} />
+                        <img src={cart_icon} className={s.shopping_cart} />
                     </Link>
-
                 </ul>
             </nav >
         </header>

@@ -5,5 +5,6 @@ export const load_product = (id) => {
         fetch(`http://localhost:3333/products/${id}`)
             .then(resp => resp.json())
             .then(json => dispatch(loadProduct(json[0])))
+            .catch(error => console.error(error))
     }
 }
