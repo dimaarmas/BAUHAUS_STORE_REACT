@@ -5,11 +5,6 @@ import s from './index.module.css'
 import { Link } from 'react-router-dom'
 
 export default function Nav() {
-
-    const categoryTextColor = {
-        color: '#339933'
-    }
-
     return (
         <header className={s.header}>
             <div className={s.logo_block}>
@@ -17,12 +12,15 @@ export default function Nav() {
                     <img src={logo} alt="company_logo" />
                 </Link>
 
-                <div>Catalog</div>
+                <Link to='/categories'>
+                    <div>Catalog</div>
+                </Link>
+
             </div>
             <nav>
                 <ul className={s.nav_block}>
                     <Link to='/categories'>
-                        <li style={categoryTextColor}>Categories</li>
+                        <li>Categories</li>
                     </Link>
 
                     <li>Coupon</li>

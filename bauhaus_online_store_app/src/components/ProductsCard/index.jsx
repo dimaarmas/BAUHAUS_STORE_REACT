@@ -6,6 +6,8 @@ export default function ProductsCard({ id, image, title, price, discont_price })
     const src_img = `http://localhost:3333${image}`
 
     const product_link = `/product/${id}`
+
+    const discount = `${Math.round(100 - discont_price * 100 / price)}`
     return (
 
 
@@ -16,7 +18,7 @@ export default function ProductsCard({ id, image, title, price, discont_price })
             <div className={s.price_section}>
                 <p>{price} €</p>
                 <p>{discont_price} €</p>
-                <p>-7%</p>
+                <p>-{discount} %</p>
             </div>
             <p>{title}</p>
         </div>

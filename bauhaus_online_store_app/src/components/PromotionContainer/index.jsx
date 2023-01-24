@@ -9,7 +9,7 @@ export default function PromotionContainer() {
 
     return (
         <div className={s.promotion_section}>
-            <div>
+            <div className={s.promotion_title}>
                 <h2>Promotion</h2>
             </div>
             <div className={s.promotion_items}>

@@ -25,16 +25,20 @@
 .nav_block li {
     list-style: none;
     cursor: pointer;
+    transition: all 0.25s;
 }
 
 .nav_block li:hover {
-    text-decoration: underline;
-    color: black;
+    color: #339933;
+    text-shadow: 0 0.5em 0.5em -0.4em #339933;
+    transform: translateX(-0.25em);
+    text-decoration: overline;
 }
 
 a {
     text-decoration: none;
     color: black;
+
 }
 
 a:hover {
@@ -51,10 +55,13 @@ a:hover {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.25s;
 }
 
 .logo_block div:hover {
     border: 1px solid #339933;
     background-color: #FFFF;
     color: #339933;
+    box-shadow: 0 0.5em 0.5em -0.4em #339933;
+    transform: translateY(-0.25em);
 }

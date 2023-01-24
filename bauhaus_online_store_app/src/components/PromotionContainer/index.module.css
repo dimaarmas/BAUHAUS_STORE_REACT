@@ -1,3 +1,13 @@
+.promotion_section {
+    padding: 49px 0 30px;
+}
+
+.promotion_section h2 {
+    padding: 0 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 .promotion_items {
     display: flex;
     justify-content: space-between;

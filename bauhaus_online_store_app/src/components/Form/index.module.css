@@ -2,50 +2,78 @@
     display: flex;
     background-color: #339933;
     height: 476px;
-    padding: 27px 0 27px 91px;
 }
 
 .form_item {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    gap: 120px;
 }
 
-.discount_text {
+.discount {
+    margin: 50px 50px;
+    color: #FFFFFF;
+}
+
+.discount_img {
+    margin: 50px;
+}
+
+.discount h1 {
     font-size: 90px;
+    line-height: 120%;
     font-weight: 700;
-    color: #FFFF;
 }
 
-.under_text {
-    font-size: 50px;
-    font-weight: 700px;
-    color: #FFFF;
-}
-
-.form_item input {
+.discount input {
     width: 473px;
     height: 75px;
-    background: #FFFF;
-    border: 1px solid transparent;
     border-radius: 25.15px;
     font-size: 18px;
     font-weight: 600;
-    padding: 27px 0 26px 50px;
 }
 
-.form_item {
-    padding: 44px 152px 45px 200px;
+.order {
+    font-size: 50px;
+    line-height: 120%;
+    font-weight: 700;
 }
 
-.form_item button {
+.discount_form {
+    background-color: #FFFFFF;
+    border-radius: 13px;
+    padding: 15px 100px;
+    margin-left: 51px;
+    color: black;
+}
+
+.discount_button {
     width: 473px;
     height: 75px;
-    background: transparent;
-    color: #FFFF;
-    border: 1px solid #FFFF;
+    border: 1px solid white;
+    background-color: transparent;
     border-radius: 25.15px;
-    font-size: 28.74px;
+    padding: 9px 105px;
+    margin-left: 51px;
     font-weight: 700;
+    font-size: 23px;
+    color: #FFFFFF;
     cursor: pointer;
-    margin-top: 30.52px;
+    transition: all 0.25s;
+}
+
+.discount_button:hover {
+    background-color: #ebe4e4;
+    border-color: #f1ff5c;
+    color: #339933;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.errors {
+    margin: 10px 70px;
+    font-size: 15px;
 }
