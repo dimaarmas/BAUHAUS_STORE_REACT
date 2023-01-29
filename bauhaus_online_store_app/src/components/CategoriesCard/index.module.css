@@ -2,8 +2,15 @@
     width: 318px;
     height: 350px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .categories_item a {
     text-decoration: none;
+}
+
+.categories_item p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
 }
