@@ -37,7 +37,7 @@ export default function Footer() {
                     </p>{" "}
                     <br />
                     <p className={s.working_text}>Working hours</p>
-                    <p className={s.working_time}> day and night</p>
+                    <p className={s.working_time}> 24 hours</p>
                 </div>
 
             </div>
