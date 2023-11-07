@@ -26,7 +26,7 @@ export default function DescriptionPage() {
     console.log(product);
 
     const { title, description, price, image, discont_price } = product;
-    const src_img = `http://localhost:3333${image}`
+    const src_img = `https://project-backend-qrwv.onrender.com${image}`
     const discount = Math.round(100 - discont_price * 100 / price)
 
     return (

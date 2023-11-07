@@ -9,7 +9,7 @@ export default function CartCard({ id, title, price, discont_price, image, count
     const decrement = () => dispatch(cartDecrement(id));
     const delete_from_cart = () => dispatch(deleteFromCart(id));
 
-    const src_img = `http://localhost:3333${image}`
+    const src_img = `https://project-backend-qrwv.onrender.com/${image}`
 
     return (
         <div className={s.cart_card}>

@@ -3,7 +3,7 @@ import s from './index.module.css'
 import { Link } from 'react-router-dom'
 
 export default function ProductsCard({ id, image, title, price, discont_price }) {
-    const src_img = `http://localhost:3333${image}`
+    const src_img = `https://project-backend-qrwv.onrender.com/${image}`
 
     const product_link = `/product/${id}`
 

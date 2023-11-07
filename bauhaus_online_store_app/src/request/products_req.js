@@ -2,10 +2,11 @@ import { loadProducts } from "../store/reducers/products";
 
 export const load_products = (id) => {
     return dispatch => {
-        fetch(`http://localhost:3333/categories/${id}`)
+        fetch(`https://project-backend-qrwv.onrender.com/categories/${id}`)
             .then(resp => resp.json())
             .then(json => {
-                const payload = json.map(el => ({
+                console.log('json', json);
+                const payload = json.data.map(el => ({
                     ...el,
                     hide_mark: false
                 }))
